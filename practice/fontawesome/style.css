@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* slick에서 이미지폰트쓰는 방법 */
+.section::after {
+    content: "\f03d";
+    /* fontawesome 5버전을 CSS에서 사용하기위해서는 font-family, font-weight가 같이 들어가야함 */
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 100px;
+}
+
+i {
+    font-size: 100px;
+}
+
+.wrap2 {
+    position: relative;
+    background-color: pink;
+    width: 500px;
+    height: 400px;
+    margin-top: 30px;
+}
+
+.wrap2 .section2 {
+    position: absolute;
+    /* transform: translate(-50%, -50%); */
+    left: calc(50% - 50px);
+    top: calc(50% - 50px);
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+
+}
