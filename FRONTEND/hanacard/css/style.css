@@ -95,10 +95,36 @@
 .ban_right {
     position: absolute;
     right: 0;
-    top: 0;
+    top: 50px;
     width: 600px;
-    height: 470px;
-    background-color: gray;
 }
 
-strong{color: #00907f;}
+.ban_right .br_tit {
+    background-color: #fff;
+    padding: 45px 0 60px 100px;
+}
+
+.ban_right .br_tit h3 {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 44px;
+    letter-spacing: -1px;
+    /* letter-spacing 자간 */
+}
+
+.ban_right .br_tit p {
+    font-size: 14px;
+    padding-top: 50px;
+    position: relative;
+}
+
+.ban_right .br_tit p::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.ban_right .br_tit p strong {
+    color: #00907f;
+}
