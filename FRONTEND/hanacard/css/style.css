@@ -62,3 +62,14 @@
 .header .list2 li {
     float: left;
 }
+
+.header .list2 li a {}
+
+.header .list2 li.logo {}
+
+.header .list2 li.logo a {
+    border: 1px solid #ccc;
+    /* border: border-width border-style border-color */
+    border-radius: 3px;
+    padding: 3px 10px;
+}
