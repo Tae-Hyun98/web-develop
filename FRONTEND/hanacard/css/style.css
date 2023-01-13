@@ -11,6 +11,11 @@
     background-color: #fff;
 }
 
+#banner{
+    background-color: #a0b1ee;
+    height: 470px;
+}
+
 /* container */
 .container {
     width: 1200px;
