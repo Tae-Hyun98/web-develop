@@ -28,20 +28,37 @@
     font-family: 'Hana B';
 }
 
-.header li {}
+.header li {
+    margin: 7px 0;
 
-.header li a {}
+}
+
+.header li a {
+    font-size: 13px;
+    display: block;
+    padding: 8px 15px;
+}
 
 .header .list1 {
     float: left;
+}
 
+.header .list1 li {
+    float: left;
+}
+
+.header .list1 li.green {}
+
+.header .list1 li.green a {
+    background-color: #00907f;
+    color: #fff;
+    border-radius: 3px;
 }
 
 .header .list2 {
     float: right;
-
 }
 
-.container .list2 li :last-child {
-    margin-right: 0;
+.header .list2 li {
+    float: left;
 }
