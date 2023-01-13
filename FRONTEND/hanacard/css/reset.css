@@ -40,4 +40,12 @@ select,
 button,
 table {
     font-family: 'Noto Sans KR', '나눔 고딕', 'Nanum Gothic', 'Malgun Gothic', '맑은 고딕', '돋움', 'Dotum', sans-serif;
+    font-size: 12px;
+}
+
+/* 블릿기호 */
+li,
+ol,
+ul {
+    list-style: none;
 }
