@@ -30,6 +30,7 @@
 
 .header li {
     margin: 7px 0;
+    background: url(../img/bar1.gif) no-repeat 0px 8px;
 
 }
 
@@ -45,6 +46,10 @@
 
 .header .list1 li {
     float: left;
+}
+
+.header .list1 li:nth-child(2) {
+    background: none;
 }
 
 .header .list1 li.green {}
@@ -63,9 +68,13 @@
     float: left;
 }
 
-.header .list2 li a {}
+.header .list2 li a {
+    color: #797979;
+}
 
-.header .list2 li.logo {}
+.header .list2 li.logo {
+    margin: 11px 13px 11px 0;
+}
 
 .header .list2 li.logo a {
     border: 1px solid #ccc;
