@@ -5,6 +5,11 @@
     padding: 0;
 }
 
+:root {
+    /* --속성이름:속성값 */
+    --green: #0f0;
+}
+
 .전체 {
     font-size: 1.2em;
     /* 16px * 1.2 = 19px 계산*/
@@ -17,7 +22,7 @@
 
 .전체 .첫째 .첫손 {
     background-color: blue;
-    color: #fff;
+    color: var(--green);
     /* viewport높이 */
     height: 100vh;
     /* viewport넓이 */
