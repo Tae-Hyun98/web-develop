@@ -4,3 +4,28 @@
     margin: 0;
     padding: 0;
 }
+
+.전체 {
+    font-size: 1.2em;
+    /* 16px * 1.2 = 19px 계산*/
+}
+
+.전체 .첫째 {
+    font-size: 0.5em;
+    /* 전체에서 상속받아서 16px * 1.2 * 0.5 */
+}
+
+.전체 .첫째 .첫손 {
+    background-color: blue;
+    color: #fff;
+    /* viewport높이 */
+    height: 100vh;
+    /* viewport넓이 */
+    /*  font-size: 10vw; */
+    font-size: 0.3rem;
+    /* r은 root를 의미함
+    html에서의 root는 html요소를 의미함
+    html의 기본폰트크기는 16px이므로
+    16px를 기준으로 계산함
+    16px * 0.3 */
+}
