@@ -11,13 +11,14 @@
     background-color: #fff;
 }
 
-#banner{
+#banner {
     background-color: #a0b1ee;
     height: 470px;
 }
 
 /* container */
 .container {
+    position: relative;
     width: 1200px;
     margin: 0 auto;
 }
@@ -87,3 +88,17 @@
     border-radius: 3px;
     padding: 3px 10px;
 }
+
+/* banner */
+.ban_left {}
+
+.ban_right {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 600px;
+    height: 470px;
+    background-color: gray;
+}
+
+strong{color: #00907f;}
