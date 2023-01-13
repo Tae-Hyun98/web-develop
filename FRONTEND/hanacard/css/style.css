@@ -121,8 +121,11 @@
 .ban_right .br_tit p::before {
     content: "";
     position: absolute;
-    top: 0;
+    top: 24px;
     left: 0;
+    width: 30px;
+    height: 2px;
+    background-color: #00907f;
 }
 
 .ban_right .br_tit p strong {
