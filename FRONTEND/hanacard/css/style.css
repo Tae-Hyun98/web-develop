@@ -176,3 +176,49 @@
 .ban_right .br_tit .login_btn ul li.lb2 a:hover {
     background: #3c3f44;
 }
+
+/* 자식의 float에 의해 부모가 깨지는 현상막기
+1. ::after를 사용하여 clear:both적용
+2. 부모에게 overflow:hidden
+3. 부모에게 강제로 높이를 준다 */
+
+.ban_right .br_btn {
+    height: 50px;
+    margin-top: 25px;
+}
+
+.ban_right .br_btn ul {
+    overflow: hidden;
+    background-color: #00907f;
+
+}
+
+.ban_right .br_btn ul li {
+    float: left;
+    font-size: 14px;
+    line-height: 50px;
+    width: 25%;
+    text-align: center;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.ban_right .br_btn ul li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 18px;
+    width: 1px;
+    height: 14px;
+    background-color: #62bdb1;
+}
+
+.ban_right .br_btn ul li:first-child:before {
+    width: 0;
+    height: 0;
+}
+
+.ban_right .br_btn ul li a {
+    color: #fff;
+    font-weight: 600;
+}
