@@ -47,11 +47,6 @@
     /* 자식중에 화면밖에 나가있는것을 숨김처리 */
 }
 
-.wrap .container .position1:hover .right {
-    left: 0;
-    /* 하에 마우스올릴시 상의 left가 0으로됨 */
-}
-
 .wrap .container .position1 h4 {
     position: absolute;
     left: 50%;
@@ -79,7 +74,20 @@
     /* 부드럽게 움직이기위해 transition을 줌 */
 }
 
+.wrap .container .position1:hover .right {
+    left: 0;
+    /* 하에 마우스올릴시 상의 left가 0으로됨 */
+}
+
 .wrap .container .position2 {
-    background: url(img/video1.mp4);
-    background-size: contain;
+    position: relative;
+}
+
+/* 비디오넣는것도 이미지 중간에 놓는거처럼 똑같이 absolute시킴 */
+.wrap .container .position2 video {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
 }
