@@ -131,3 +131,38 @@
 .ban_right .br_tit p strong {
     color: #00907f;
 }
+
+.ban_right .br_tit .login_btn {
+    position: absolute;
+    right: 60px;
+    top: 55px;
+}
+
+.ban_right .br_tit .login_btn ul {}
+
+.ban_right .br_tit .login_btn ul li {}
+
+.ban_right .br_tit .login_btn ul li a {
+    display: block;
+    width: 80px;
+    height: 80px;
+    font-size: 14px;
+    text-align: center;
+    color: #fff;
+    line-height: 15px;
+    box-sizing: border-box;
+}
+
+.ban_right .br_tit .login_btn ul li.lb1 {
+    margin-bottom: 1px;
+}
+
+.ban_right .br_tit .login_btn ul li.lb1 a {
+    background: #db3360 url(../img/ico_login.png) center 17px no-repeat;
+    padding-top: 50px;
+}
+
+.ban_right .br_tit .login_btn ul li.lb2 a {
+    background: #3c3f44;
+    line-height: 80px;
+}
