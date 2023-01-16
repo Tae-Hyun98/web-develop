@@ -150,7 +150,6 @@
     text-align: center;
     color: #fff;
     line-height: 15px;
-    box-sizing: border-box;
 }
 
 .ban_right .br_tit .login_btn ul li.lb1 {
@@ -158,11 +157,22 @@
 }
 
 .ban_right .br_tit .login_btn ul li.lb1 a {
-    background: #db3360 url(../img/ico_login.png) center 17px no-repeat;
+    background: #db3360 url(../img/ico_login.png) center 18px no-repeat;
     padding-top: 50px;
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+
+.ban_right .br_tit .login_btn ul li.lb1 a:hover {
+    background-color: #c4204c;
 }
 
 .ban_right .br_tit .login_btn ul li.lb2 a {
-    background: #3c3f44;
+    background: #333;
     line-height: 80px;
+    transition: 0.3s;
+}
+
+.ban_right .br_tit .login_btn ul li.lb2 a:hover {
+    background: #3c3f44;
 }
