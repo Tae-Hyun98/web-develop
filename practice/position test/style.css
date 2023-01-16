@@ -20,6 +20,7 @@
     padding: 30px 0;
 }
 
+/* 자식 */
 .wrap .container {
     background-color: #cf4dce;
     width: 900px;
@@ -27,7 +28,6 @@
     padding: 30px;
     box-sizing: border-box;
     /* 패딩값에 사이즈안에 들어가도록 box-sizing: border-box;함 */
-
 }
 
 .wrap .container>div {
@@ -35,9 +35,9 @@
     float: left;
     width: 47.5%;
     height: 200px;
-
 }
 
+/* 자손 */
 .wrap .container .position1 {
     position: relative;
     margin-right: 5%;
@@ -90,4 +90,32 @@
     top: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
+}
+
+/* 둘째 */
+.wrap .container2 {
+    background-color: #ff7b54;
+    width: 900px;
+    margin: 30px auto;
+    padding: 30px;
+    box-sizing: border-box;
+    /* 패딩을 붙이는데 사이즈안에 들어오도록 box-sizing한것 */
+}
+
+.wrap .container2>div {
+    width: 23.5%;
+    float: left;
+    margin-right: 2%;
+    background-color: #1C82AD;
+    height: 200px;
+}
+
+.wrap .container2 .pos1 {}
+
+.wrap .container2 .pos2 {}
+
+.wrap .container2 .pos3 {}
+
+.wrap .container2 .pos4 {
+    margin-right: 0;
 }
