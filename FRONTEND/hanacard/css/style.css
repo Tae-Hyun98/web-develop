@@ -222,4 +222,5 @@
 .ban_right .br_btn ul li a {
     color: #fff;
     font-weight: 600;
+    display: block;
 }
