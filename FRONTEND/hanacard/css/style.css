@@ -214,6 +214,7 @@
 }
 
 .ban_right .br_btn ul li:first-child:before {
+    /* display: none;해도되고 width: 0; height: 0;해도됨 */
     width: 0;
     height: 0;
 }
