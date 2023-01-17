@@ -16,6 +16,14 @@
     height: 470px;
 }
 
+#contents {}
+
+/* contents layout */
+#cont1 {
+    height: 940px;
+    background-color: #f5f6f8;
+}
+
 /* container */
 .container {
     position: relative;
@@ -223,4 +231,22 @@
     color: #fff;
     font-weight: 600;
     display: block;
+}
+
+#nav {
+    position: relative;
+}
+
+#nav .gnb {}
+
+#nav .gnb li {
+    display: inline;
+}
+
+#nav .gnb li a {}
+
+#nav .gnb_right {
+    position: absolute;
+    right: 0;
+    top: 0;
 }
