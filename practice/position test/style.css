@@ -171,6 +171,7 @@
 .wrap .container3>div.con1 {
     margin-right: 10%;
     position: relative;
+    overflow: hidden;
 }
 
 .wrap .container3>div.con1>div {
@@ -197,9 +198,102 @@
     background-image: url(img/img1.jpg);
     background-size: cover;
     z-index: 1;
+    left: 100%;
+    transition: 0.3s;
 }
+
+.wrap .container3>div.con1:hover>div.th1 {
+    left: 0;
+}
+
 
 .wrap .container3>div.con1>div.th2 {
     background-image: url(img/img2.jpg);
     background-size: cover;
+}
+
+.wrap .container3>div.con2 {
+    position: relative;
+    overflow: hidden;
+}
+
+.wrap .container3>div.con2 video {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+/* 넷째 */
+.wrap .container4 {
+    width: 900px;
+    margin: 30px auto;
+    background-color: pink;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.wrap .container4>div {
+    width: 45%;
+    height: 200px;
+    float: left;
+    overflow: hidden;
+}
+
+.wrap .container4>div.fo1>div h4 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.3);
+    font-size: 44px;
+    color: #fff;
+    padding: 5px 15px;
+    border-radius: 4px;
+}
+
+.wrap .container4 .fo1 {
+    background-color: red;
+}
+
+.wrap .container4 .fo1:hover .p1 {
+    left: 0;
+}
+
+.wrap .container4>div.fo1 {
+    margin-right: 10%;
+    position: relative;
+}
+
+.wrap .container4>div.fo1>div.p1 {
+    position: absolute;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+    background-image: url(img/img1.jpg);
+    background-size: cover;
+    z-index: 1;
+    transition: 0.3s;
+}
+
+.wrap .container4>div.fo1>div.p2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(img/img2.jpg);
+    background-size: cover;
+}
+
+
+.wrap .container4 .fo2 {
+    position: relative;
+    background-color: red;
+}
+
+.wrap .container4 .fo2 video {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
 }
