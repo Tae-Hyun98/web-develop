@@ -235,6 +235,7 @@
 }
 
 .wrap .container4>div {
+    background-color: red;
     width: 45%;
     height: 200px;
     float: left;
@@ -251,10 +252,6 @@
     color: #fff;
     padding: 5px 15px;
     border-radius: 4px;
-}
-
-.wrap .container4 .fo1 {
-    background-color: red;
 }
 
 .wrap .container4 .fo1:hover .p1 {
@@ -288,7 +285,6 @@
 
 .wrap .container4 .fo2 {
     position: relative;
-    background-color: red;
 }
 
 .wrap .container4 .fo2 video {
