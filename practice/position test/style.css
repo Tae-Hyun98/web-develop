@@ -92,6 +92,7 @@
     width: 100%;
 }
 
+
 /* 둘째 */
 .wrap .container2 {
     background-color: #ff7b54;
@@ -108,14 +109,64 @@
     margin-right: 2%;
     background-color: #1C82AD;
     height: 200px;
+    position: relative;
 }
 
-.wrap .container2 .pos1 {}
-
-.wrap .container2 .pos2 {}
-
-.wrap .container2 .pos3 {}
-
-.wrap .container2 .pos4 {
+.wrap .container2>div.pos4 {
     margin-right: 0;
+}
+
+.wrap .container2>div>div {
+    position: absolute;
+    background-color: #cf4dce;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+}
+
+.wrap .container2>div>div.two {
+    /* 공통으로 left, top값을 줘서 공통값이 더 강력해서 auto로 풀어줘야한다 */
+    left: auto;
+    top: auto;
+    right: 0;
+    bottom: 0;
+    transform: none;
+}
+
+.wrap .container2>div>div.three {
+    left: auto;
+    top: 0;
+    right: 0;
+    transform: none;
+}
+
+.wrap .container2>div>div.four {
+    top: auto;
+    left: 0;
+    bottom: 0;
+    transform: none;
+}
+
+.wrap .container3 {
+    width: 900px;
+    height: 200px;
+    margin: 0 auto;
+    background-color: aqua;
+    padding: 30px;
+    /* padding으로 커져서 넘칠때 사이즈에맞게 하기위해 box-sizing추가 */
+    box-sizing: border-box;
+}
+
+.wrap .container3>div {
+    width: 45%;
+    background-color: yellow;
+    float: left;
+}
+
+.wrap .container3>div.con1 {
+    margin-right: 10%;
 }
