@@ -65,3 +65,15 @@ h6 {
     font-size: 12px;
     font-weight: normal;
 }
+
+/* ir효과 */
+.ir {
+    width: 0;
+    height: 0;
+    font-size: 0;
+    line-height: 0;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
