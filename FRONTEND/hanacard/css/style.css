@@ -196,9 +196,21 @@
     animation: down-small 0.3s 3.2s both;
 }
 
-.ban_left .ob.ob14 {}
+/* 바람1 */
+.ban_left .ob.ob14 {
+    left: 501px;
+    top: 370px;
+    animation: scale 2s 3.4s infinite both;
+    transform-origin: left top;
+}
 
-.ban_left .ob.ob15 {}
+/* 바람2 */
+.ban_left .ob.ob15 {
+    left: 501px;
+    top: 370px;
+    animation: scale 2s 3.3s infinite both;
+    transform-origin: left top;
+}
 
 @keyframes gulum {
     0% {
@@ -300,6 +312,23 @@
 
     100% {
         transform: translate(0px, 0px);
+        opacity: 1;
+    }
+}
+
+@keyframes scale {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    10% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1);
         opacity: 1;
     }
 }
