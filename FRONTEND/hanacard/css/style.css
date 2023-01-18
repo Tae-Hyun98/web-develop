@@ -212,6 +212,21 @@
     transform-origin: left top;
 }
 
+/* 원 */
+.ban_left .ob.ob16 {
+    left: 485px;
+    top: 119px;
+    animation: rotate 3s linear infinite;
+}
+
+/* 서프라이즈 */
+.ban_left .ob.ob17 {
+    left: 378px;
+    top: 189px;
+    animation: scale 3s 4s both;
+    transform-origin: left center;
+}
+
 @keyframes gulum {
     0% {
         transform: translateX(-10px);
@@ -330,6 +345,16 @@
     100% {
         transform: scale(1);
         opacity: 1;
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(359deg);
     }
 }
 
