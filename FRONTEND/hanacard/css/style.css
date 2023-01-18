@@ -104,16 +104,54 @@
     position: absolute;
 }
 
+/* 구름1 */
 .ban_left .ob.ob1 {
     left: 151px;
     top: 161px;
     animation: gulum 3s 0.3s linear infinite both;
 }
 
+/* 구름2 */
 .ban_left .ob.ob2 {
-    left: 200px;
+    left: 180px;
     top: 133px;
     animation: gulum 3s 0.6s linear infinite both;
+}
+
+/* 달력 */
+.ban_left .ob.ob3 {
+    left: 208px;
+    top: 78px;
+    animation: down 0.5s 0.5s both;
+}
+
+/* 쇼핑할땐 */
+.ban_left .ob.ob4 {
+    left: 250px;
+    top: 112px;
+    animation: left 0.5s 0.7s both;
+}
+
+/* 타이틀 */
+.ban_left .ob.ob5 {
+
+    left: 250px;
+    top: 140px;
+    animation: left 0.5s 0.9s both;
+}
+
+/* 1 */
+.ban_left .ob.ob6 {
+    left: 264px;
+    top: 213px;
+    animation: down-long 0.5s 0.7s both;
+}
+
+/* 1 */
+.ban_left .ob.ob7 {
+    left: 320px;
+    top: 213px;
+    animation: down-long 0.5s 0.9s both;
 }
 
 @keyframes gulum {
@@ -135,6 +173,47 @@
 
     100% {
         transform: translateX(-10px)
+    }
+}
+
+@keyframes down {
+    0% {
+        transform: translateY(-300px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes down-long {
+    0% {
+        transform: translateY(-500px);
+        opacity: 0;
+    }
+
+    50% {
+        transform: translateY(30px);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes left {
+    0% {
+        transform: translateX(500px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
     }
 }
 
