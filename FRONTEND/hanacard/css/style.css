@@ -154,6 +154,52 @@
     animation: down-long 0.5s 0.9s both;
 }
 
+/* 우산 */
+.ban_left .ob.ob8 {
+    left: 433px;
+    top: 302px;
+    animation: tl 0.3s 2.8s both;
+}
+
+/* 슈트케이스 */
+.ban_left .ob.ob9 {
+    left: 355px;
+    top: 317px;
+    animation: down-small 0.3s 2.7s both;
+}
+
+/* 자동차 */
+.ban_left .ob.ob10 {
+    left: 220px;
+    top: 343px;
+    animation: left-b 0.6s 1.8s both;
+}
+
+/* 선물 */
+.ban_left .ob.ob11 {
+    left: 376px;
+    top: 268px;
+    animation: down-small 0.3s 2.9s both;
+}
+
+/* 박스 */
+.ban_left .ob.ob12 {
+    left: 360px;
+    top: 284px;
+    animation: down-small 0.3s 3s both;
+}
+
+/* 가방 */
+.ban_left .ob.ob13 {
+    left: 415px;
+    top: 274px;
+    animation: down-small 0.3s 3.2s both;
+}
+
+.ban_left .ob.ob14 {}
+
+.ban_left .ob.ob15 {}
+
 @keyframes gulum {
     0% {
         transform: translateX(-10px);
@@ -188,6 +234,18 @@
     }
 }
 
+@keyframes down-small {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
 @keyframes down-long {
     0% {
         transform: translateY(-500px);
@@ -213,6 +271,35 @@
 
     100% {
         transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes left-b {
+    0% {
+        transform: translateX(500px);
+        opacity: 0;
+    }
+
+    85% {
+        transform: translateX(-180px);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes tl {
+    0% {
+        transform: translate(110px, -100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translate(0px, 0px);
         opacity: 1;
     }
 }
