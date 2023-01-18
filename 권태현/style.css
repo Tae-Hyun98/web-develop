@@ -4,3 +4,92 @@
     margin: 0;
     padding: 0;
 }
+
+.clear::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.wrap {
+    width: 1200px;
+    background-color: #00337c;
+    margin: 100px auto 0;
+    padding: 30px 0;
+}
+
+.wrap .first {
+    background-color: #ff8b13;
+    width: 1000px;
+    margin: 0 auto;
+    padding: 30px;
+    box-sizing: border-box;
+    border: 10px solid red;
+}
+
+.wrap .first .child {
+    background-color: #39b5e0;
+    float: left;
+    width: 23.5%;
+    height: 200px;
+    margin-right: 2%;
+    position: relative;
+}
+
+.wrap .first .child h4 {
+    position: absolute;
+    background-color: #222;
+    color: #fff;
+    border-radius: 3px;
+    /* padding: 10px 20px; */
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+
+}
+
+.wrap .first .child1 h4 {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.wrap .first .child2 h4 {
+    top: 0;
+    right: 0;
+}
+
+.wrap .first .child3 h4 {
+    bottom: 0;
+    right: 0;
+}
+
+.wrap .first .child4 {
+    margin-right: 0;
+}
+
+.wrap .first .child4 h4 {
+    left: 0;
+    bottom: 0;
+}
+
+.wrap .two {
+    background-color: #7b2869;
+    width: 1000px;
+    margin: 50px auto 0;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.wrap .two>div {
+    background-color: #fff;
+    float: left;
+    width: 47.5%;
+    height: 200px;
+    margin: 0 auto;
+}
+
+.wrap .two>div.child1 {
+    margin-right: 5%;
+}
