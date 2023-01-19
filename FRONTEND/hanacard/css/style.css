@@ -618,6 +618,7 @@
 
 /* card_img */
 .card_img {
+    position: relative;
     padding: 18px 47px 0;
     box-sizing: border-box;
 }
@@ -666,7 +667,7 @@
     margin-right: 11px;
 }
 
-.card_img .card_link ul li:last-child{
+.card_img .card_link ul li:last-child {
     margin-right: 0;
 }
 
@@ -678,7 +679,26 @@
     transition: 0.3s;
 }
 
-.card_img .card_link ul li a:hover{
+.card_img .card_link ul li a:hover {
     border-color: #666;
     color: #00907f;
 }
+
+.card_img .cardmore-btn {
+    position: absolute;
+    left: auto;
+    right: -39px;
+    top: 66px;
+    width: 40px;
+    height: 151px;
+    background: url(../img/btn_card_v01.png) no-repeat;
+}
+
+/* card_desc */
+.card_desc {}
+
+.card_desc dl {}
+
+.card_desc dl dt {}
+
+.card_desc dl dd {}
