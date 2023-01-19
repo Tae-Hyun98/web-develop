@@ -634,8 +634,9 @@
 
 .card_img .card_banner ul li {
     float: left;
-    width: 146px;
+    width: 148px;
     margin-left: 30px;
+    text-align: center;
 }
 
 .card_img .card_banner ul li:first-child {
@@ -652,4 +653,32 @@
     font-size: 14px;
     padding-top: 8px;
     display: block;
+}
+
+.card_img .card_link {
+    margin-top: 30px;
+}
+
+.card_img .card_link ul {}
+
+.card_img .card_link ul li {
+    float: left;
+    margin-right: 11px;
+}
+
+.card_img .card_link ul li:last-child{
+    margin-right: 0;
+}
+
+.card_img .card_link ul li a {
+    display: block;
+    border: 1px solid #e8e8e8;
+    font-size: 15px;
+    padding: 10px 11px;
+    transition: 0.3s;
+}
+
+.card_img .card_link ul li a:hover{
+    border-color: #666;
+    color: #00907f;
 }
