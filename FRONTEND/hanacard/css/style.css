@@ -719,3 +719,24 @@
     content: '"';
     color: #00907f;
 }
+
+.card_desc dl dd.cd2 {}
+
+.card_desc dl dd.cd2 ul {}
+
+.card_desc dl dd.cd2 ul li {
+    display: inline;
+}
+
+.card_desc dl dd.cd2 ul li a {
+    display: inline-block;
+    width: 128px;
+    padding: 8px 3px;
+    border: 1px solid #fff;
+    background-color: #fff;
+    transition: 0.3s;
+}
+
+.card_desc dl dd.cd2 ul li a:hover {
+    border: 1px solid #bbb;
+}
