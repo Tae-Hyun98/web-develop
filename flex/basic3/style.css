@@ -1,0 +1,11 @@
+@import url(basic.css);
+
+.container {
+    display: flex;
+    height: 500px;
+
+    align-items: stretch;
+    /* 기본값 */
+    align-items: flex-start;
+    align-items: flex-end;
+}

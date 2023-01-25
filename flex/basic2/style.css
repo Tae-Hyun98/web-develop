@@ -2,28 +2,12 @@
 
 .container {
     display: flex;
-    /* display: inline-flex; */
-    flex-direction: row;
-    /* 기본값 row*/
-    /* flex-direction: row-reverse; */
-    /* flex-direction: column; */
-    /* flex-direction: column-reverse; */
-
-    /* 줄넘김 처리 */
-    flex-wrap: nowrap;
-    /* 기본값 nowrap */
-    /* flex-wrap: wrap; */
-    /* flex-wrap: wrap-reverse; */
-
-    /* flex-flow: flex-direction flex-wrap; */
-    flex-flow: row nowrap;
-    flex-flow: row wrap;
-}
-
-.item {
-    width: 40%;
-}
-
-.item:nth-child(1) {
-    /* white-space: nowrap; */
+    /* 메인축방향으로 이동 */
+    justify-content: flex-start;
+    /* 기본값 flex-start */
+    justify-content: end;
+    justify-content: center;
+    justify-content: space-between;
+    justify-content: space-around;
+    justify-content: space-evenly;
 }
