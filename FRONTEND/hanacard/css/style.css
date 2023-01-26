@@ -847,6 +847,39 @@
 /* eb_slider_list */
 .eb_slider_list {
     color: #000;
+    position: relative;
 }
 
-.eb_slider_list .slick-dots {}
+.eb_slider_list .slick-dots {
+    position: absolute;
+    right: 50px;
+    top: 50px;
+}
+
+.eb_slider_list .slick-dots li {
+    display: inline;
+    margin-right: 8px;
+}
+
+.eb_slider_list .slick-dots li button {
+    /* 인라인요소는 원래 공간을 인식하지 못하나, 
+    인라인요소중 공간을 인식하는 요소: img, button */
+    font-size: 0;
+    line-height: 0;
+    border: none;
+    width: 8px;
+    height: 8px;
+    background-color: rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.eb_slider_list .slick-dots li.slick-active button {
+    background-color: #d75e7e;
+}
+
+.eb_slider_list .slick-dots li button:hover {
+    background-color: #00907f;
+    transform: scale(1.3);
+}
