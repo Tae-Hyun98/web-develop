@@ -730,8 +730,7 @@
 
 .card_desc dl dd.cd2 ul li a {
     display: inline-block;
-    width: 128px;
-    padding: 8px 3px;
+    padding: 8px 30px;
     border: 1px solid #fff;
     background-color: #fff;
     transition: 0.3s;
@@ -781,4 +780,62 @@
 
 .event_box1 .eb_banner3 {
     background: #43587d url(../img/event_icon3.png) no-repeat center 25px;
+}
+
+/* event_box2 */
+.event_box2 {}
+
+.eb_banner4 {
+    position: relative;
+    width: 600px;
+    height: 376px;
+    background-color: #fff;
+    text-align: left;
+}
+
+.eb_banner4 .eb_icon {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.eb_banner4 .eb_icon ul {}
+
+.eb_banner4 .eb_icon ul li {
+    float: left;
+}
+
+.eb_banner4 .eb_icon ul li a {
+    display: block;
+    font-size: 13px;
+    padding: 3px 12px;
+}
+
+.eb_banner4 .eb_icon ul li.ei1 {}
+
+.eb_banner4 .eb_icon ul li.ei1 a {
+    background-color: #00907f;
+    color: #fff;
+    border-radius: 3px;
+    text-transform: uppercase;
+    transition: 0.3s;
+    border: 1px solid #00907f;
+}
+
+.eb_banner4 .eb_icon ul li.ei1 a:hover {
+    background-color: #007668;
+    border-color: #007668;
+}
+
+.eb_banner4 .eb_icon ul li.ei2 {}
+
+.eb_banner4 .eb_icon ul li.ei2 a {
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    transition: 0.3s;
+}
+
+.eb_banner4 .eb_icon ul li.ei2 a:hover{
+    border-color: #000;
+    color: #000;
 }
