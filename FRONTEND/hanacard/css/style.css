@@ -795,8 +795,8 @@
 
 .eb_banner4 .eb_icon {
     position: absolute;
-    left: 0;
-    top: 0;
+    left: 60px;
+    top: 60px;
 }
 
 .eb_banner4 .eb_icon ul {}
@@ -811,7 +811,9 @@
     padding: 3px 12px;
 }
 
-.eb_banner4 .eb_icon ul li.ei1 {}
+.eb_banner4 .eb_icon ul li.ei1 {
+    margin-right: 8px;
+}
 
 .eb_banner4 .eb_icon ul li.ei1 a {
     background-color: #00907f;
@@ -835,7 +837,7 @@
     transition: 0.3s;
 }
 
-.eb_banner4 .eb_icon ul li.ei2 a:hover{
+.eb_banner4 .eb_icon ul li.ei2 a:hover {
     border-color: #000;
     color: #000;
 }

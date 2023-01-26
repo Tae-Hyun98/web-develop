@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>하나카드</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+
     <!--  <link rel="stylesheet" href="css/reset.css"> -->
     <link rel="stylesheet" href="css/style.css">
 
@@ -236,8 +239,18 @@
                                             <a href="#" title="새창열림">당첨자 확인</a>
                                         </li>
                                     </ul>
-                                </div>
+                                </div> <!-- END eb_icon -->
+
+                                <!-- slick -->
+                                <div class="eb_slider">
+                                    <div class="eb_slider_list">
+                                        <div>your content</div>
+                                        <div>your content</div>
+                                        <div>your content</div>
+                                    </div>
+                                </div> <!-- END eb_slider -->
                             </div> <!-- END eb_banner4 -->
+
                             <div class="eb_banner5">
 
                             </div> <!-- END eb_banner5 -->
@@ -251,6 +264,17 @@
         </div> <!-- END contents -->
     </div> <!-- END wrap -->
 
+    <!-- jquery가 slick보다 위로 -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.eb_slider_list').slick({
+                /* setting - name: setting - value */
+            });
+        });
+    </script>
 </body>
+
 
 </html>
