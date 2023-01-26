@@ -5,21 +5,15 @@
 }
 
 .item {
-    flex-grow: 0;
-    /* 기본값 */
+    /* 0-->FALSE, 0이외의 숫자-->TRUE */
     flex-grow: 1;
-    width: 100px;
-    /* 가지고 있는 넓이보다 커질수 있다 */
+    flex-shrink: 1;
+    /* 기본값 shrink: 1 */
+    flex-basis: 150px;
 }
 
 .item:nth-child(1) {
-    flex-grow: 1;
-}
-
-.item:nth-child(2) {
-    flex-grow: 2;
-}
-
-.item:nth-child(3) {
-    flex-grow: 1;
+    /* width: 150px;
+    flex-shrink: 0; */ /* 정해진넓이(150)이하로는 줄어들지 않는다. */
+    flex-shrink: 2;
 }
