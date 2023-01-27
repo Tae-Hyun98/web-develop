@@ -935,3 +935,44 @@
 .eb_banner5 .money li.w100 a {
     width: 100px;
 }
+
+/* event_box3 */
+.event_box3 {
+    width: 300px;
+    height: 564px;
+    background-color: #d7567e;
+}
+
+.event_box3 h4 {
+    font-size: 22px;
+    padding: 40px 0;
+}
+
+.eb_slider2 {
+    text-align: center;
+}
+
+.eb_slider2 img {
+    display: inline;
+}
+
+.eb_slider2 .slick-dots {}
+
+.eb_slider2 .slick-dots li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.eb_slider2 .slick-dots li button {
+    font-size: 0;
+    line-height: 0;
+    width: 10px;
+    height: 10px;
+    background-color: rgba(255, 255, 255, 0.6);
+    border: none;
+    border-radius: 50%;
+}
+
+.eb_slider2 .slick-dots li.slick-active button {
+    background-color: rgba(255, 255, 255, 0.8);
+}
