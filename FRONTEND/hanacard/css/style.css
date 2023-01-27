@@ -883,3 +883,55 @@
     background-color: #00907f;
     transform: scale(1.3);
 }
+
+.eb_banner5 {
+    width: 600px;
+    height: 188px;
+    background: #8cc7e9 url(../img/event_icon4.png) no-repeat 153px 65px;
+    position: relative;
+}
+
+.eb_banner5 h4 {
+    position: absolute;
+    top: 95px;
+    left: 60px;
+    font-family: 'Hana B';
+    font-size: 20px;
+    color: #000;
+}
+
+.eb_banner5 .money {
+    padding-top: 50px;
+    padding-left: 260px;
+}
+
+.eb_banner5 .money li {
+    float: left;
+    margin-right: 8px;
+    margin-bottom: 8px;
+}
+
+.eb_banner5 .money li a {
+    display: block;
+    background-color: #fff;
+    font-size: 14px;
+    border-radius: 3px;
+    width: 134px;
+    text-align: center;
+    padding: 9px 10px;
+}
+
+.eb_banner5 a.point {
+    position: absolute;
+    left: 60px;
+    top: 55px;
+    color: #fff;
+    background-color: #43587d;
+    text-transform: uppercase;
+    border-radius: 3px;
+    padding: 3px 12px;
+}
+
+.eb_banner5 .money li.w100 a {
+    width: 100px;
+}
