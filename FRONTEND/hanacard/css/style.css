@@ -1043,8 +1043,11 @@
     position: absolute;
     left: 0;
     top: 0;
-    right: 0;
-    bottom: 0;
+
+    width: 100%;
+    /* right: 0; */
+    height: 100%;
+    /* bottom: 0; */
 }
 
 #life .life_style li:nth-child(1) {
@@ -1080,3 +1083,19 @@
     display: block;
     letter-spacing: -0.8px;
 }
+
+#life .life_btn {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #fff;
+}
+
+#life .life_btn ul {}
+
+#life .life_btn ul li {
+
+}
+
+#life .life_btn ul li a {}
