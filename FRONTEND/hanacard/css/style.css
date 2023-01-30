@@ -24,6 +24,11 @@
     background-color: #f5f6f8;
 }
 
+#cont2 {
+    height: 555px;
+    background-color: #efefef;
+}
+
 /* container */
 .container {
     position: relative;
@@ -971,8 +976,40 @@
     background-color: rgba(255, 255, 255, 0.6);
     border: none;
     border-radius: 50%;
+    cursor: pointer;
 }
 
 .eb_slider2 .slick-dots li.slick-active button {
     background-color: rgba(255, 255, 255, 0.8);
 }
+
+.eb_slider2 p {
+    font-size: 16px;
+    padding: 35px 0 15px;
+}
+
+.eb_slider2 .es2_btn {
+    display: inline-block;
+    background-color: #fff;
+    padding: 10px 50px;
+    font-size: 16px;
+    border-radius: 3px;
+}
+
+/* life */
+#life {
+    height: 330px;
+    background-color: blue;
+}
+
+#life .life_menu {
+    width: 50%;
+    background-color: green;
+    float: right;
+}
+
+#life .life_menu ul {}
+
+#life .life_menu ul li {float: left;}
+
+#life .life_menu ul li a {}
