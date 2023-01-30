@@ -1073,29 +1073,59 @@
     width: 50%;
     font-size: 50px;
     padding: 60px 0 0 30px;
-    letter-spacing: 10px;
-    /* 자간 */
 }
 
 #life .life_style .text a em {
     font-size: 18px;
     color: #000;
     display: block;
-    letter-spacing: -0.8px;
+    letter-spacing: 2px;
+    /* 자간 */
 }
 
 #life .life_btn {
     position: absolute;
     left: 0;
-    bottom: 0;
+    bottom: 84px;
     width: 100%;
     background-color: #fff;
+    overflow: hidden;
 }
 
 #life .life_btn ul {}
 
 #life .life_btn ul li {
-
+    position: relative;
+    float: left;
+    width: 16.6%;
+    text-align: center;
+    height: 48px;
+    line-height: 48px;
+    font-size: 15px;
+    color: #333;
+    box-sizing: border-box;
 }
 
-#life .life_btn ul li a {}
+#life .life_btn ul li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 18px;
+    width: 1px;
+    height: 14px;
+    background-color: #ccc;
+}
+
+#life .life_btn ul li:first-child::before {
+    width: 0;
+    height: 0;
+}
+
+#life .life_btn ul li a {
+    display: block;
+    transition: 0.3s;
+}
+
+#life .life_btn ul li a:hover {
+    color: #007668;
+}
