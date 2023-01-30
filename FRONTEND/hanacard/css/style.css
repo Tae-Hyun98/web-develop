@@ -1003,13 +1003,80 @@
 }
 
 #life .life_menu {
+    position: relative;
     width: 50%;
-    background-color: green;
     float: right;
+    z-index: 20;
 }
 
 #life .life_menu ul {}
 
-#life .life_menu ul li {float: left;}
+#life .life_menu ul li {
+    float: left;
+    width: 25%;
+    margin-top: 60px;
+}
 
-#life .life_menu ul li a {}
+#life .life_menu ul li a {
+    display: block;
+    width: 100px;
+    height: 100px;
+    background-color: #ddd;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 100px;
+    transition: 0.3s;
+    /* 1s=1000ms, transition: 300ms; */
+}
+
+#life .life_menu ul li a:hover {
+    background-color: #cc3b63;
+    color: #fff;
+}
+
+#life .life_style {
+    position: relative;
+    height: 100%;
+}
+
+#life .life_style li {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+#life .life_style li:nth-child(1) {
+    background: url(../img/mc_service_bg02.png) no-repeat;
+}
+
+#life .life_style li:nth-child(2) {
+    background: url(../img/mc_service_bg03.png) no-repeat;
+}
+
+#life .life_style li:nth-child(3) {
+    background: url(../img/mc_service_bg04.png) no-repeat;
+}
+
+#life .life_style li:nth-child(4) {
+    background: url(../img/mc_service_bg05.png) no-repeat;
+}
+
+#life .life_style .text {}
+
+#life .life_style .text a {
+    display: block;
+    width: 50%;
+    font-size: 50px;
+    padding: 60px 0 0 30px;
+    letter-spacing: 10px;
+    /* 자간 */
+}
+
+#life .life_style .text a em {
+    font-size: 18px;
+    color: #000;
+    display: block;
+    letter-spacing: -0.8px;
+}

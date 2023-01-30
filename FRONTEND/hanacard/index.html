@@ -303,7 +303,41 @@
                                 <li><a href="#">공연예매</a></li>
                                 <li><a href="#">영화예매</a></li>
                             </ul>
-                        </div>
+                        </div> <!-- END life_menu -->
+                        <ul class="life_style">
+                            <li>
+                                <div class="text">
+                                    <a href="#">
+                                        <em>라이프 스타일</em>
+                                        Shopping
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="text">
+                                    <a href="#">
+                                        <em>라이프 스타일</em>
+                                        Travel
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="text">
+                                    <a href="#">
+                                        <em>라이프 스타일</em>
+                                        Flight
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="text">
+                                    <a href="#">
+                                        <em>라이프 스타일</em>
+                                        Movie
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -331,6 +365,23 @@
                 fade: true,
                 autoplay: true,
                 pauseOnHover: false
+            });
+
+            //life버튼
+            var tab = $('.life_menu ul li');
+            var menu = $('.life_style li')
+
+            tab.mouseover(function () {
+                var target = $(this); //내가 마우스오버한 li를 잡아줌
+                var index = target.index();
+                console.log(index);
+
+                menu.css({
+                    opacity: 0
+                })
+                menu.eq(index).css({
+                    opacity: 1
+                })
             });
         });
     </script>
