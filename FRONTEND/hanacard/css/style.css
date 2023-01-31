@@ -1044,7 +1044,6 @@
     position: absolute;
     left: 0;
     top: 0;
-    pointer-events: none;
     width: 100%;
     /* right: 0; */
     height: 100%;
@@ -1088,7 +1087,7 @@
 #life .life_btn {
     position: absolute;
     left: 0;
-    bottom: 85px;
+    bottom: 86px;
     width: 100%;
     background-color: #fff;
     overflow: hidden;
