@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url(media.css);
 
 * {
     margin: 0;
@@ -17,7 +18,7 @@ header {
 
 aside {
     /* 형에게 float이 있으면 동생도 float이 있어야한다. */
-    /* 동생이 float을 가져도 형은 없어도 된다.(상황에 따라 다르다) */
+    /* 동생이 float을 가져도 형은 반드시 float이 필요한건 아니다.(상황에 따라 다르다) */
     float: left;
     width: 400px;
     height: 700px;
@@ -25,9 +26,14 @@ aside {
 }
 
 section {
+    float: left;
+    width: 800px;
+    height: 700px;
     background-color: yellow;
 }
 
 footer {
+    float: left;
+    width: 100%;
     background-color: green;
 }
