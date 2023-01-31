@@ -4,3 +4,30 @@
     margin: 0;
     padding: 0;
 }
+
+#wrap {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    height: 150px;
+    background-color: red;
+}
+
+aside {
+    /* 형에게 float이 있으면 동생도 float이 있어야한다. */
+    /* 동생이 float을 가져도 형은 없어도 된다.(상황에 따라 다르다) */
+    float: left;
+    width: 400px;
+    height: 700px;
+    background-color: orange;
+}
+
+section {
+    background-color: yellow;
+}
+
+footer {
+    background-color: green;
+}
