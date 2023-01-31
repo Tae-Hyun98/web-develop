@@ -1,13 +1,14 @@
 @import url(basic.css);
 
 .container {
+    height: 1000px;
     display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .item {
-    width: 150px;
-}
-
-.item:last-child{
-    margin-left: auto;
+    width: 200px;
+    height: 200px;
 }
