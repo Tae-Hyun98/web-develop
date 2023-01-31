@@ -1086,7 +1086,7 @@
 #life .life_btn {
     position: absolute;
     left: 0;
-    bottom: 84px;
+    bottom: 85px;
     width: 100%;
     background-color: #fff;
     overflow: hidden;
@@ -1097,16 +1097,10 @@
 #life .life_btn ul li {
     position: relative;
     float: left;
-    width: 16.6%;
-    text-align: center;
-    height: 48px;
-    line-height: 48px;
-    font-size: 15px;
-    color: #333;
-    box-sizing: border-box;
+    width: 16.6666%;
 }
 
-#life .life_btn ul li::before {
+#life .life_btn ul li::after {
     content: "";
     position: absolute;
     left: 0;
@@ -1116,13 +1110,17 @@
     background-color: #ccc;
 }
 
-#life .life_btn ul li:first-child::before {
+#life .life_btn ul li:first-child::after {
     width: 0;
     height: 0;
 }
 
 #life .life_btn ul li a {
     display: block;
+    font-size: 15px;
+    text-align: center;
+    color: #333;
+    padding: 13px 10px;
     transition: 0.3s;
 }
 
