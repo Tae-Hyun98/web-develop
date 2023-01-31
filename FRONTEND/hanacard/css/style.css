@@ -998,6 +998,7 @@
 
 /* life */
 #life {
+    position: relative;
     height: 330px;
     background-color: blue;
 }
@@ -1127,4 +1128,25 @@
 
 #life .life_btn ul li a:hover {
     color: #007668;
+}
+
+/* app */
+#app {}
+
+#app .app_left {
+    float: left;
+    width: 49%;
+    height: 200px;
+    background: #fff url(../img/mc_service_banner01_img.jpg) no-repeat 50px 45px;
+}
+
+#app .app_right {
+    float: right;
+    width: 50%;
+    height: 200px;
+    background-color: #ddd;
+}
+
+#app .app_left ul li {
+    float: left;
 }
