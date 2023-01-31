@@ -44,7 +44,7 @@ h1::after {
     }
 
     h1::after {
-        content: " - 960px ~ 1024px";
+        content: " - 961px ~ 1024px";
     }
 }
 
@@ -59,7 +59,7 @@ h1::after {
     }
 
     h1::after {
-        content: " - 768px ~ 960px";
+        content: " - 769px ~ 960px";
     }
 }
 
@@ -74,7 +74,7 @@ h1::after {
     }
 
     h1::after {
-        content: " - 576px ~ 768px";
+        content: " - 577px ~ 768px";
     }
 }
 
