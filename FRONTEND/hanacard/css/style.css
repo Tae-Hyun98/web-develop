@@ -1023,6 +1023,7 @@
     height: 100px;
     background-color: #ddd;
     border-radius: 50%;
+    font-size: 17px;
     text-align: center;
     line-height: 100px;
     transition: 0.3s;
