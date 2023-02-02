@@ -7,12 +7,18 @@
 }
 
 .container {
-    height: 50vh;
     display: flex;
 }
 
+/* 시각적순서일뿐 구조가 바뀌지는 않는다 */
+.item:nth-child(1) {
+    order: 2;
+}
+
 .item:nth-child(2) {
-    align-self: center;
-    align-self: flex-start;
-    align-self: flex-end;
+    order: 1;
+}
+
+.item:nth-child(3) {
+    order: 3;
 }
