@@ -11,6 +11,20 @@
 
 <body>
 
+    <div class="one animate" data-animate="motion"></div>
+    <div class="two animate" data-animate="motion"></div>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="js/jquery.scrolla.min.js"></script>
+    
+    <script>
+        $('.animate').scrolla({
+            // default
+            mobile: false, // disable animation on mobiles
+            once: false, // only once animation play on scroll
+            animateCssVersion: 4 // used animate.css version (3 or 4)
+        });
+    </script>
 </body>
 
 </html>
