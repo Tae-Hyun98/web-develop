@@ -22,6 +22,25 @@ body {
     margin-left: auto;
 }
 
-.header .search-form input[type="search"]{
-    border-radius:5px
+.header .search-form input[type="search"] {
+    border-radius: 5px;
+    border: none;
+    /* border: 0; */
+    outline: none;
 }
+
+.header .search-form input[type="submit"] {
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    width: 60px;
+    background-color: gold;
+}
+
+.wrap .menu {
+    display: flex;
+}
+
+.wrap .menu .menu-item {}
+
+.wrap .menu .menu-item .menu-link {}
