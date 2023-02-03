@@ -30,3 +30,27 @@ body {
     clear: both;
     display: block;
 }
+
+/* header */
+header {}
+
+.innerheader {
+    max-width: 1720px;
+    margin: 0 auto;
+    height: 110px;
+    line-height: 110px;
+}
+
+.innerheader .logo {}
+
+.innerheader .logo a {}
+
+.innerheader .logo a img {}
+
+.innerheader .mainmenu {}
+
+.innerheader .mainmenu .gnb {}
+
+.innerheader .mainmenu .gnb li {}
+
+.innerheader .mainmenu .gnb li a {}
