@@ -51,6 +51,28 @@ body {
     width: 25%;
     background-color: gold;
     text-align: center;
+    transition: 0.3s;
 }
 
-.menu .menu-item .menu-link {}
+.menu .menu-item:hover {
+    width: 35%;
+    background-color: skyblue;
+}
+
+.menu .menu-item .menu-link {
+    display: block;
+    font-size: 20px;
+    padding: 15px 0;
+    font-weight: bold;
+}
+
+/* primary */
+.primary {}
+
+.primary .card-list {}
+
+.primary .card-list .card-item {}
+
+.primary .card-list .card-item .card-image {}
+
+.primary .card-list .card-item .card-desc {}
