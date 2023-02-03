@@ -57,7 +57,9 @@ header {}
     float: right;
 }
 
-.innerheader .mainmenu .gnb {}
+.innerheader .mainmenu .gnb {
+    float: left;
+}
 
 .innerheader .mainmenu .gnb li {
     float: left;
@@ -67,4 +69,34 @@ header {}
 .innerheader .mainmenu .gnb li a {
     display: block;
     color: #555;
+}
+
+.innerheader .mainmenu .sns {
+    float: left;
+    margin-left: 300px;
+}
+
+.innerheader .mainmenu .sns li {
+    float: left;
+    margin: 0 20px;
+}
+
+.innerheader .mainmenu .sns li a {
+    display: block;
+    padding: 0 10px;
+}
+
+.innerheader .mainmenu .sns li a img {}
+
+/* visual */
+.visual {}
+
+.visual .mainImg {
+    float: left;
+    width: 50%;
+}
+
+.visual .mainTxt {
+    float: left;
+    width: 50%;
 }
