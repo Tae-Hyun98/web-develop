@@ -41,16 +41,30 @@ header {}
     line-height: 110px;
 }
 
-.innerheader .logo {}
+.innerheader .logo {
+    float: left;
+}
 
-.innerheader .logo a {}
+.innerheader .logo a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
 
 .innerheader .logo a img {}
 
-.innerheader .mainmenu {}
+.innerheader .mainmenu {
+    float: right;
+}
 
 .innerheader .mainmenu .gnb {}
 
-.innerheader .mainmenu .gnb li {}
+.innerheader .mainmenu .gnb li {
+    float: left;
+    margin: 0 20px;
+}
 
-.innerheader .mainmenu .gnb li a {}
+.innerheader .mainmenu .gnb li a {
+    display: block;
+    color: #555;
+}
