@@ -69,10 +69,21 @@ body {
 /* primary */
 .primary {}
 
-.primary .card-list {}
+.primary .card-list {
+    display: flex;
+    flex-wrap: wrap;
+}
 
-.primary .card-list .card-item {}
+.primary .card-list .card-item {
+    width: 33.3333%;
+    padding: 0 15px;
+}
 
-.primary .card-list .card-item .card-image {}
+.primary .card-list .card-item .card-image {
+    background: url(../img.png) no-repeat center center;
+    /* padding과 margin의 상하좌우의 공간을 백분률(%)로 줄때 기준이 부모의 넓이값 */
+    height: 0;
+    padding-bottom: 60%;
+}
 
 .primary .card-list .card-item .card-desc {}
