@@ -89,14 +89,77 @@ header {}
 .innerheader .mainmenu .sns li a img {}
 
 /* visual */
-.visual {}
+.visual {
+    max-width: 1720px;
+    margin: 0 auto;
+}
 
 .visual .mainImg {
     float: left;
     width: 50%;
 }
 
+.visual .mainImg img {
+    width: 90%;
+}
+
 .visual .mainTxt {
     float: left;
     width: 50%;
+}
+
+.visual .mainTxt .tit {
+    font-size: 72px;
+}
+
+.visual .mainTxt .tit .gray {}
+
+.visual .mainTxt .tit .txt {}
+
+/* 타이틀, 텍스트 */
+.tit {
+    font-size: 50px;
+    line-height: 1.1;
+    font-weight: normal;
+}
+
+.tit span {
+    display: block;
+}
+
+.tit span b {
+    font-weight: normal;
+}
+
+.tit .en_s {
+    font-size: 22px;
+    font-weight: normal;
+}
+
+.txt p {
+    color: #888;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.txt p b {
+    font-weight: normal;
+}
+
+.txt .moreBtn {
+    position: relative;
+    display: inline-block;
+    color: #333;
+    margin-top: 20px;
+    padding-left: 50px;
+}
+
+.txt .moreBtn::before {
+    content: "";
+    width: 42px;
+    height: 1px;
+    background-color: #333;
+    position: absolute;
+    left: 0;
+    top: 52%;
 }
