@@ -122,16 +122,17 @@ header {}
 }
 
 
+/* inner - 넓이에 대한 가이드 */
+section .inner {
+    width: 1320px;
+    margin: 0 auto;
+    overflow: hidden;
+}
 
-
-
-
-
-
-
-
-
-
+section .inner .box {
+    float: left;
+    width: 50%;
+}
 
 
 /* 타이틀, 텍스트 */
@@ -265,3 +266,13 @@ header {}
 }
 
 /* END 텍스트 애니메이션 */
+
+/* svg */
+.circleBox {}
+
+.circleBox .svgAni {}
+
+.circleBox .svgAni path {
+    stroke-dasharray: 6021px;
+    stroke-dashoffset: 0;
+}
