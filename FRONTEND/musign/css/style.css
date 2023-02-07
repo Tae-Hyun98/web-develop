@@ -149,6 +149,37 @@ section.jurnal .scroll::before {
     left: 6px;
 }
 
+section.jurnal .box .img {
+    padding-top: 100px;
+}
+
+section.jurnal .box ul {
+    border-top: 1px solid #e6e6e6;
+    padding-top: 40px;
+    margin-top: 40px;
+}
+
+section.jurnal .box ul li {
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+section.jurnal .box ul li h3 {
+    float: left;
+    width: 22%;
+    font-size: 15px;
+}
+
+section.jurnal .box ul li p {
+    float: left;
+    width: 78%;
+    color: #888;
+}
+
+section.jurnal .moreBtn {
+    margin-left: 22%;
+}
+
 /* inner - 넓이에 대한 가이드 */
 section .inner {
     width: 1320px;
@@ -192,7 +223,7 @@ section .inner .box {
     font-weight: normal;
 }
 
-.txt .moreBtn {
+.moreBtn {
     position: relative;
     display: inline-block;
     color: #333;
@@ -299,41 +330,16 @@ section .inner .box {
 
 .circleBox .svgAni {}
 
-.circleBox .svgAni path {}
+.circleBox .svgAni path {
+    stroke-dasharray: 6201px;
+}
 
 .circleBox:hover .svgAni path {}
 
 section.jurnal .circleBox {
-
     position: absolute;
     width: 700px;
     right: 13%;
-    top: 0;
-}
-
-section.jurnal .box .img {
-    padding-top: 100px;
-}
-
-section.jurnal .box ul {
-    border-top: 1px solid #e6e6e6;
-    padding-top: 40px;
-    margin-top: 40px;
-}
-
-section.jurnal .box ul li {
-    overflow: hidden;
-    margin-bottom: 30px;
-}
-
-section.jurnal .box ul li h3 {
-    float: left;
-    width: 22%;
-    font-size: 15px;
-}
-
-section.jurnal .box ul li p {
-    float: left;
-    width: 78%;
-    color: #888;
+    top: 100px;
+    z-index: -1;
 }
