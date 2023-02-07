@@ -25,7 +25,7 @@ body {
     font-family: 'Dancing Script', cursive;
 }
 
-.clearfix {
+.clearfix::after {
     content: "";
     clear: both;
     display: block;
@@ -121,6 +121,33 @@ header {}
     padding: 50px 0 0 70PX;
 }
 
+/* jurnal */
+section.jurnal {
+    position: relative;
+    padding: 190px 0 120px;
+}
+
+section.jurnal .scroll {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    font-size: 10px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    writing-mode: vertical-rl;
+    padding-top: 90px;
+}
+
+section.jurnal .scroll::before {
+    content: "";
+    position: absolute;
+    height: 75px;
+    width: 1px;
+    background-color: #333;
+    top: 0;
+    left: 6px;
+}
 
 /* inner - 넓이에 대한 가이드 */
 section .inner {
@@ -175,12 +202,12 @@ section .inner .box {
     transition: 0.3s;
 }
 
-.txt .moreBtn:hover {
+.moreBtn:hover {
     transform: skewX(0deg) translateX(0px);
     font-weight: bold;
 }
 
-.txt .moreBtn::before {
+.moreBtn::before {
     content: "";
     width: 42px;
     height: 1px;
@@ -208,7 +235,7 @@ section .inner .box {
     }
 }
 
-.img.img.animate__motion::after {
+.img.animate__motion::after {
     content: "";
     position: absolute;
     left: 0;
@@ -272,7 +299,41 @@ section .inner .box {
 
 .circleBox .svgAni {}
 
-.circleBox .svgAni path {
-    stroke-dasharray: 6021px;
-    stroke-dashoffset: 0;
+.circleBox .svgAni path {}
+
+.circleBox:hover .svgAni path {}
+
+section.jurnal .circleBox {
+
+    position: absolute;
+    width: 700px;
+    right: 13%;
+    top: 0;
+}
+
+section.jurnal .box .img {
+    padding-top: 100px;
+}
+
+section.jurnal .box ul {
+    border-top: 1px solid #e6e6e6;
+    padding-top: 40px;
+    margin-top: 40px;
+}
+
+section.jurnal .box ul li {
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+section.jurnal .box ul li h3 {
+    float: left;
+    width: 22%;
+    font-size: 15px;
+}
+
+section.jurnal .box ul li p {
+    float: left;
+    width: 78%;
+    color: #888;
 }
