@@ -331,7 +331,8 @@ section .inner .box {
 .circleBox .svgAni {}
 
 .circleBox .svgAni path {
-    stroke-dasharray: 6201px;
+    stroke-dasharray: 3000px;
+
 }
 
 .circleBox:hover .svgAni path {}
