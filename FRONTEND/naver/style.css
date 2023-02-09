@@ -65,3 +65,47 @@ h3.join_title {
     font-size: 15px;
     color: #8e8e8e;
 }
+
+.pswImg {
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 18px;
+    height: 20px;
+}
+
+#bir_wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+#bir_wrap #bir_yy {
+    width: 147px;
+}
+
+#bir_wrap #bir_mm {
+    width: 147px;
+}
+
+#bir_wrap #bir_dd {
+    width: 147px;
+}
+
+select {
+    width: 100%;
+    border: none;
+    appearance: none;
+    background: url(img/sel_arr_2x.gif) no-repeat right 50%;
+    background-size: 20px 8px;
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+select:focus {
+    outline: none;
+}
+
+input {
+    cursor: pointer;
+}

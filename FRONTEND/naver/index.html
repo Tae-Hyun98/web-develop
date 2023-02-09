@@ -15,7 +15,7 @@
             <img src="img/NAVER_CI_Green.png" alt="logo">
         </a>
     </div> <!-- END header -->
-    <div id="wrpper">
+    <div id="wrapper">
         <div id="content">
             <div>
                 <h3 class="join_title">
@@ -25,9 +25,90 @@
                     <input type="text" id="id" class="int" maxlength="20">
                     <span class="step_url">@naver.com</span>
                 </span>
-            </div>
-        </div>
-    </div>
+            </div> <!-- END id -->
+
+            <div>
+                <h3 class="join_title">
+                    <label for="pswd1">비밀번호</label>
+                    <span class="box int_pass">
+                        <input type="text" id="pswd1" class="int" maxlength="20">
+                        <img src="img/m_icon_pass.png" class="pswImg" alt="비밀번호">
+                    </span>
+                </h3>
+            </div> <!-- END pw1 -->
+
+            <div>
+                <h3 class="join_title">
+                    <label for="pswd2">비밀번호 재확인</label>
+                    <span class="box int_pass_check">
+                        <input type="text" id="pswd2" class="int" maxlength="20">
+                        <img src="img/m_icon_check_disable.png" class="pswImg" alt="비밀번호">
+                    </span>
+                </h3>
+            </div> <!-- END pw2 -->
+
+            <div>
+                <h3 class="join_title">
+                    <label for="name">이름</label>
+                    <span class="box int_name">
+                        <input type="text" id="name" class="int" maxlength="20">
+                    </span>
+                </h3>
+            </div> <!-- END name -->
+
+            <div>
+                <h3 class="join_title">
+                    <label for="yy">생년월일</label>
+                </h3>
+                <div id="bir_wrap">
+                    <div id="bir_yy">
+                        <span class="box">
+                            <input type="text" id="yy" class="int" maxlength="4" placeholder="년(4자)">
+                        </span>
+                    </div> <!-- END 생년 -->
+                    <div id="bir_mm">
+                        <span class="box">
+                            <select id="mm">
+                                <option>월</option>
+                                <option value="01">1</option>
+                                <option value="02">2</option>
+                                <option value="03">3</option>
+                                <option value="04">4</option>
+                                <option value="05">5</option>
+                                <option value="06">6</option>
+                                <option value="07">7</option>
+                                <option value="08">8</option>
+                                <option value="09">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                            </select>
+                        </span>
+                    </div> <!-- END 생월 -->
+                    <div id="bir_dd">
+                        <span class="box">
+                            <input type="text" id="dd" class="int" maxlength="2" placeholder="일">
+                        </span>
+                    </div> <!-- END 생일 -->
+                </div> <!-- END wrap -->
+            </div> <!-- END 생년월일 -->
+
+            <div>
+                <h3 class="join_title">
+                    <label for="gender">성별</label>
+                    <span class="box gender_code">
+                        <select id="gender">
+                            <option>성별</option>
+                            <option value="M">남자</option>
+                            <option value="F">여자</option>
+                        </select>
+                    </span>
+                </h3>
+            </div> <!-- END gender -->
+
+        </div> <!-- END content -->
+
+    </div> <!-- END wrapper -->
 
 </body>
 
