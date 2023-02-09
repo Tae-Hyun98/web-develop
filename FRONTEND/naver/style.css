@@ -7,6 +7,7 @@
 
 body {
     background-color: #f5f6f7;
+    height: 1000px;
 }
 
 /* header */
@@ -100,6 +101,7 @@ select {
     background-size: 20px 8px;
     font-size: 15px;
     margin-top: 5px;
+    cursor: pointer;
 }
 
 select:focus {
@@ -107,5 +109,26 @@ select:focus {
 }
 
 input {
+    cursor: pointer;
+}
+
+.optional {
+    color: #828282;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.btn_area {
+    margin: 10px 0 91px;
+}
+
+.btn_area .btnJoin {
+    /* img, button는 인라인요소이지만 넓이를 인식한다. */
+    width: 100%;
+    border: none;
+    background-color: #08a600;
+    font-size: 20px;
+    color: #fff;
+    padding: 21px 0 17px;
     cursor: pointer;
 }
