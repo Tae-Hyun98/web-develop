@@ -362,11 +362,13 @@ section .inner .box {
 .circleBox .svgAni {}
 
 .circleBox .svgAni path {
-    stroke-dasharray: 3000px;
-
+    stroke-dasharray: 6020px;
+    stroke-dashoffset: 0;
 }
 
-.circleBox:hover .svgAni path {}
+.circleBox.animate__motion .svgAni path {
+    animation: dash 1.5s;
+}
 
 section.jurnal .circleBox {
     position: absolute;
@@ -374,4 +376,93 @@ section.jurnal .circleBox {
     right: 13%;
     top: 100px;
     z-index: -1;
+}
+
+@keyframes dash {
+    0% {
+        stroke-dashoffset: 6020px;
+    }
+
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+
+/* 미디어쿼리 -- 반응형 */
+@media (max-width:1720px) {
+    .innerheader {
+        max-width: 100%;
+        padding: 0 30px;
+        box-sizing: border-box;
+    }
+
+    .innerheader .mainmenu .sns {
+        float: left;
+        margin-left: 200px;
+    }
+
+    .visual .mainTxt {
+        margin-top: 150px;
+    }
+
+    .visual .mainTxt .tit {
+        font-size: 62px;
+    }
+}
+
+@media (max-width:1400px) {
+    .innerheader .mainmenu .sns li {
+
+        margin: 0 5px;
+    }
+
+    .visual .mainTxt {
+        margin-top: 100px;
+    }
+
+    .visual .mainTxt .tit {
+        font-size: 46px;
+    }
+
+    .visual .mainTxt .txt {
+        padding: 20px 0 0 0PX;
+    }
+
+    /* .img .img img {
+        width: 100%;
+    } */
+    .img.img img {
+        width: 100%;
+    }
+
+    section .inner {
+        width: 100%;
+        padding: 0 30px;
+        box-sizing: border-box;
+    }
+
+    section.jurnal {
+        overflow: hidden;
+    }
+
+    section.jurnal .scroll {
+        display: none;
+    }
+
+    section.jurnal .circleBox {
+        position: absolute;
+        right: -10%;
+    }
+
+    section.jurnal .box .img {
+        width: 90%;
+    }
+}
+
+@media (max-width:1024px) {
+    .innerheader {
+        height: 80px;
+        line-height: 80px;
+    }
 }
