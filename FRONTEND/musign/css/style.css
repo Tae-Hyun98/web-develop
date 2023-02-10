@@ -465,4 +465,77 @@ section.jurnal .circleBox {
         height: 80px;
         line-height: 80px;
     }
+
+    .innerheader .mainmenu {
+        display: none;
+    }
+
+    .menuOpen {
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: none;
+        padding: 15px 20px;
+    }
+
+    .menuOpen .open::before {
+        display: none;
+    }
+
+    .visual .mainImg {
+        float: none;
+        width: 100%;
+    }
+
+    .visual .mainTxt {
+        width: 100%;
+        float: none;
+        margin-top: 50px;
+    }
+
+    section .inner .box {
+        float: none;
+        width: 100%;
+    }
+
+    section.jurnal {
+        padding: 80px 0;
+    }
+
+    section.jurnal .circleBox {
+        top: 200px;
+    }
+
+    section.jurnal .box .img {
+        padding-top: 0;
+        width: 80%;
+        margin: 0 auto 50px;
+    }
+}
+
+@media (max-width:767px) {
+    body {
+        font-size: 13px;
+    }
+
+    .innerheader {
+        height: 60px;
+        line-height: 60px;
+    }
+
+    .menuOpen {
+        top: -5px;
+    }
+
+    .menuOpen .open img {
+        height: 38px;
+    }
+
+    .visual {
+        padding: 0 20px;
+    }
+
+    .tit.tit.tit {
+        font-size: 30px;
+    }
 }
