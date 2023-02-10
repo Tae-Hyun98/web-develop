@@ -1,6 +1,12 @@
 @charset "UTF-8";
 /* @import url(reset.css); */
 
-.둘째{
+.둘째,
+.셋째 {
     margin-top: 20px;
+}
+
+.둘째 form {
+    border: 1px solid #222;
+    padding: 10px;
 }
