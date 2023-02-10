@@ -1,16 +1,56 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html> <!-- html5버전으로 문서가 만들어진다 -->
+<html lang="ko">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- equiv=equivalant(동등한), 호환을 어떻게 할 것인가의 내용
+        IE의 가장 최신버전으로 보게한다. 만약에 크롬 브라우저가 있다면 크롬 브라우저가 웹페이지를 분석해서 보여준다는 의미(크롬엔진을 사용하라는 의미)
+        만약에 크롬이 깔려있지 않다면 ie의 최신버전(최상위 버전)으로 해석 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- viewport의 사이즈를 device의 사이즈로 맞추고 기본적인 확대정도는 1(100%), 확대 또는 축소되지 않는 상태로 출발한다. -->
+    <meta name="author" content="부산광역시"> <!-- 사이트만든사람 -->
+    <meta name="description" content="부산광역시 대표 홈페이지"> <!-- 사이트소개 -->
+    <meta name="keywords" content="부산광역시 부산시청 부산시광역시"> <!-- 해시태그같은것 -->
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    
+    <h2>사용자로부터 입력받기</h2>
+    <div class="첫째">
+        <form action="#">
+            <label for="name">이름</label>
+            <input type="text" id="name" name="my-name">
+            <br><br>
+            <label for="age">나이</label>
+            <input type="number" id="age" name="my-age">
+            <br><br>
+            <button type="submit">제출</button>
+            <button type="reset">초기화</button>
+        </form>
+    </div> <!-- END 첫째 -->
+    <div class="둘째">
+        <form action="#">
+            <fieldset>
+                <legend>반장</legend>
+                <label for="name">이름</label>
+                <input type="text" id="name" name="name-1">
+                <br><br>
+                <label for="age">나이</label>
+                <input type="number" id="age" name="age1">
+            </fieldset>
+
+            <fieldset>
+                <legend>부반장</legend>
+                <label for="name2">이름</label>
+                <input type="text" id="name2" name="name-2">
+                <br><br>
+                <label for="age2">나이</label>
+                <input type="number" id="age2" name="age2">
+            </fieldset>
+        </form>
+    </div>
 </body>
 
 </html>
