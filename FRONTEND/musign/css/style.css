@@ -538,4 +538,61 @@ section.jurnal .circleBox {
     .tit.tit.tit {
         font-size: 30px;
     }
+
+    section .inner {
+        padding: 0 20px;
+    }
+
+    section.jurnal {
+        padding: 50px 0;
+    }
+
+    section.jurnal .circleBox {
+        top: 10%;
+        right: -4%;
+    }
+
+    section.jurnal .box .img {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    section.jurnal .box img {
+        width: 100%;
+    }
+
+    section.jurnal .box ul {
+        margin-top: 30px;
+    }
+
+    section.jurnal .box ul li {
+        margin-bottom: 20px;
+    }
+
+    section.jurnal .box ul li h3 {
+        width: 100%;
+    }
+
+    section.jurnal .box ul li p {
+        width: 100%;
+        font-size: 12px;
+    }
+
+    section.jurnal .moreBtn {
+        margin-left: 0;
+    }
+}
+
+@media (max-width:320px) {
+    .tit .en_s {
+        font-size: 16px;
+    }
+
+    .tit.tit.tit {
+        font-size: 27px;
+    }
+
+    section.jurnal .box ul li h3{
+        font-size: 14px;
+    }
 }
