@@ -558,7 +558,7 @@ section.jurnal .circleBox {
     }
 
     section.service {
-        padding: 80px 0;
+        padding: 80px;
     }
 
     section.service .txt {
@@ -571,7 +571,24 @@ section.jurnal .circleBox {
     }
 
     section.service .box.design {
-        margin: 0;
+        margin-top: 50px;
+        width: 100%;
+    }
+
+    section.service .box.design .img {
+        width: 70%;
+    }
+
+    section.service .box.design .tit {
+        font-size: 35px;
+    }
+
+    section.customer {
+        padding: 120px 0;
+    }
+
+    section.customer .tit {
+        font-size: 30px;
     }
 }
 
@@ -642,6 +659,19 @@ section.jurnal .circleBox {
 
     section.jurnal .moreBtn {
         margin-left: 0;
+    }
+
+    section.service {
+        padding: 50px 0;
+    }
+
+    section.service .box .img {
+        margin-top: 30px;
+        width: 100%;
+    }
+
+    section.service .box.design .img {
+        width: 100%;
     }
 }
 
