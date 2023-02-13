@@ -211,6 +211,51 @@ section.jurnal .moreBtn {
     margin-left: 22%;
 }
 
+/* service */
+section.service {
+    padding: 190px 0;
+}
+
+section.service .box {}
+
+section.service .box .img {
+    margin-top: 60px;
+}
+
+section.service .box.design {
+    /* padding, margin의 %(백분율)의 기준은 상하좌우 모두 내 부모의 넓이 
+        height % 기준 부모의 높이 
+        px는 기준X*/
+    margin-top: -40%;
+    width: 45%;
+    border-top: 1px solid #c4e5ea;
+    padding-top: 60px;
+}
+
+section.service .box.design .tit {
+    font-size: 30px;
+    line-height: 1.4;
+    margin-bottom: 30px;
+}
+
+/* customer */
+section.customer {
+    background: url(../img/img_04.jpg) no-repeat center;
+    background-size: cover;
+    text-align: center;
+    padding: 160px 0;
+}
+
+section.customer .tit {
+    color: #fff;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+section.customer .txt {
+    color: #777;
+}
+
 /* inner - 넓이에 대한 가이드 */
 section .inner {
     width: 1320px;
@@ -511,6 +556,23 @@ section.jurnal .circleBox {
         width: 80%;
         margin: 0 auto 50px;
     }
+
+    section.service {
+        padding: 80px 0;
+    }
+
+    section.service .txt {
+        margin-top: 20px;
+    }
+
+    section.service .box .img {
+        margin-top: 50px;
+        width: 70%;
+    }
+
+    section.service .box.design {
+        margin: 0;
+    }
 }
 
 @media (max-width:767px) {
@@ -592,7 +654,7 @@ section.jurnal .circleBox {
         font-size: 27px;
     }
 
-    section.jurnal .box ul li h3{
+    section.jurnal .box ul li h3 {
         font-size: 14px;
     }
 }
