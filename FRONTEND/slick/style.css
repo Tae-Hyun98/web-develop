@@ -73,19 +73,14 @@ header .container .search a i {}
 
 
 
-.slider {
+.wrap .main .container {
     color: #fff;
 }
 
-.wrap .main .container .slick-dots {
-    display: inline;
-}
+.wrap .main .container .slider {}
+
+.wrap .main .container .slick-dots {}
 
 .slider .slick-prev {}
 
-.wrap .main .container .slick-prev::before {
-    content: "\f053";
-    font-family: "Font Awesome 5 Free";
-    visibility: visible;
-    color: #fff;
-}
+.wrap .main .container .slick-prev::before {}
