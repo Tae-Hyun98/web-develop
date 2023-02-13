@@ -673,6 +673,19 @@ section.jurnal .circleBox {
     section.service .box.design .img {
         width: 100%;
     }
+
+    section.service .box.design .tit{
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+
+    section.customer{
+        padding: 80px 20px;
+    }
+
+    section.customer .tit.tit{
+        font-size: 25px;
+    }
 }
 
 @media (max-width:320px) {
