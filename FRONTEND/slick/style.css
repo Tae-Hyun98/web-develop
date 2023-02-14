@@ -77,10 +77,103 @@ header .container .search a i {}
     color: #fff;
 }
 
-.wrap .main .container .slider {}
+.main {
+    margin-top: 5%;
+}
 
-.wrap .main .container .slick-dots {}
+.main .slick-slide {
+    display: flex;
+    position: relative;
+}
 
-.slider .slick-prev {}
+.left_area {
+    width: 50%;
+    height: 80vh;
+}
 
-.wrap .main .container .slick-prev::before {}
+.right_area {
+    width: 50%;
+    height: 80vh;
+    background-color: blue;
+}
+
+
+.left_area .vespa_img {
+    width: 120%;
+    padding-top: 160px;
+}
+
+.main .slick-active .left_area .vespa_img {
+    animation: fadeInR 0.5s 0.5s both;
+}
+
+.left_area .vespa_img img {
+    width: 100%;
+}
+
+.left_area .vespa_tit {
+    position: absolute;
+    left: 0;
+    top: 120px;
+    z-index: -1;
+}
+
+.left_area .vespa_tit h2 {
+    font-size: 135px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.left_area .vespa_tit p {
+    font-size: 19px;
+    color: #fff;
+    letter-spacing: 19px;
+}
+
+.main .slick-arrow {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.main .slick-next::after {
+    content: "\f054";
+    font-family: "Font Awesome 5 Free";
+
+}
+
+@keyframes fadeInR {
+    0% {
+        transform: translateX(150%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInL {
+    0% {
+        transform: translateX(-150%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInT {
+    0% {
+        transform: translateY(-150%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
