@@ -1,16 +1,14 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
 @import url(reset.css);
-/* font-family: 'Dancing Script', cursive; */
-/* font-family: 'Noto Sans KR', sans-serif; */
-/* font-family: 'Handel Gothic'; */
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
+
+/* font-family: 'Dancing Script', cursive;
+font-family: 'Noto Sans KR', sans-serif; 
+font-family: 'Handel Gothic';
+*/
 
 /* layout */
-* {
-    margin: 0;
-    padding: 0;
-}
-
 body {
     font-family: 'Noto Sans KR', sans-serif;
     font-size: 14px;
@@ -27,8 +25,8 @@ body {
 
 .clearfix::after {
     content: "";
-    clear: both;
     display: block;
+    clear: both;
 }
 
 /* menuOpen */
@@ -43,7 +41,7 @@ body {
 .menuOpen .open {
     background: none;
     border: none;
-    cursor: pointer;
+    /* border: 0; */
 }
 
 .menuOpen .open::before {
@@ -114,10 +112,11 @@ header {}
 
 .innerheader .mainmenu .sns li a {
     display: block;
-    padding: 0 10px;
+    padding: 0 10px
 }
 
 .innerheader .mainmenu .sns li a img {}
+
 
 /* visual */
 .visual {
@@ -144,12 +143,14 @@ header {}
     font-size: 72px;
 }
 
-.visual .mainTxt .tit .gray {
+.visual .mainTxt .tit {}
+
+.visual .mainTxt .tit span.gray {
     color: #ccc;
 }
 
 .visual .mainTxt .txt {
-    padding: 50px 0 0 70PX;
+    padding: 50px 0 0 70px;
 }
 
 /* jurnal */
@@ -171,7 +172,7 @@ section.jurnal .scroll {
 }
 
 section.jurnal .scroll::before {
-    content: "";
+    content: '';
     position: absolute;
     height: 75px;
     width: 1px;
@@ -223,13 +224,13 @@ section.service .box .img {
 }
 
 section.service .box.design {
-    /* padding, margin의 %(백분율)의 기준은 상하좌우 모두 내 부모의 넓이 
-        height % 기준 부모의 높이 
-        px는 기준X*/
+    /* padding, margin의 %(백분율)의 기준은 상하좌우 모두 내 부모의 넓이
+  height:30% --> %의 기준은 부모의 높이 */
     margin-top: -40%;
     width: 45%;
     border-top: 1px solid #c4e5ea;
     padding-top: 60px;
+
 }
 
 section.service .box.design .tit {
@@ -240,7 +241,7 @@ section.service .box.design .tit {
 
 /* customer */
 section.customer {
-    background: url(../img/img_04.jpg) no-repeat center;
+    background: url(../img/img_04.jpg)no-repeat center;
     background-size: cover;
     text-align: center;
     padding: 160px 0;
@@ -262,7 +263,7 @@ section.team {
     padding: 190px 0;
 }
 
-section.team .box.right {
+section.team .box.left {
     text-align: right;
     padding-right: 80px;
     box-sizing: border-box;
@@ -325,6 +326,10 @@ footer .bottom ul li b {
     font-weight: normal;
 }
 
+
+
+
+
 /* inner - 넓이에 대한 가이드 */
 section .inner {
     width: 1320px;
@@ -336,7 +341,6 @@ section .inner .box {
     float: left;
     width: 50%;
 }
-
 
 /* 타이틀, 텍스트 */
 .tit {
@@ -373,8 +377,9 @@ section .inner .box {
     display: inline-block;
     color: #333;
     margin-top: 20px;
-    padding-left: 50px;
+    padding-left: 45px;
     transform: skewX(-15deg) translateX(5px);
+    /* degree */
     transition: 0.3s;
 }
 
@@ -393,12 +398,12 @@ section .inner .box {
     top: 52%;
 }
 
-/* END 타이틀, 텍스트 */
+/* //타이틀, 텍스트 */
 
-/* 이미지 애니메이션 */
+/* 이미지애니메이션 */
 .img.animate__motion {
-    animation: imgAni 1s;
     position: relative;
+    animation: imgAni 1s;
 }
 
 @keyframes imgAni {
@@ -432,7 +437,7 @@ section .inner .box {
     }
 }
 
-/* END 이미지 애니메이션 */
+/* //이미지애니메이션 */
 
 /* 텍스트 애니메이션 */
 .tit.animate__motion {}
@@ -455,6 +460,7 @@ section .inner .box {
     animation: textAni 2s;
 }
 
+
 @keyframes textAni {
     0% {
         opacity: 0;
@@ -468,7 +474,7 @@ section .inner .box {
 
 }
 
-/* END 텍스트 애니메이션 */
+/* //텍스트 애니메이션 */
 
 /* svg */
 .circleBox {}
@@ -476,8 +482,8 @@ section .inner .box {
 .circleBox .svgAni {}
 
 .circleBox .svgAni path {
-    stroke-dasharray: 6020px;
-    stroke-dashoffset: 0;
+    stroke-dasharray: 6144px;
+    stroke-dashoffset: 0px;
 }
 
 .circleBox.animate__motion .svgAni path {
@@ -493,8 +499,8 @@ section.jurnal .circleBox {
 }
 
 section.team .circleBox {
-    position: absolute;
     width: 700px;
+    position: absolute;
     left: 20%;
     top: -50px;
     z-index: -1;
@@ -502,16 +508,15 @@ section.team .circleBox {
 
 @keyframes dash {
     0% {
-        stroke-dashoffset: 6020px;
+        stroke-dashoffset: 6144px
     }
 
     100% {
-        stroke-dashoffset: 0;
+        stroke-dashoffset: 0
     }
 }
 
-
-/* 미디어쿼리 -- 반응형 */
+/* ------ 미디어쿼리 ------ 반응형 */
 @media (max-width:1720px) {
     .innerheader {
         max-width: 100%;
@@ -520,7 +525,6 @@ section.team .circleBox {
     }
 
     .innerheader .mainmenu .sns {
-        float: left;
         margin-left: 200px;
     }
 
@@ -535,7 +539,6 @@ section.team .circleBox {
 
 @media (max-width:1400px) {
     .innerheader .mainmenu .sns li {
-
         margin: 0 5px;
     }
 
@@ -548,15 +551,14 @@ section.team .circleBox {
     }
 
     .visual .mainTxt .txt {
-        padding: 20px 0 0 0PX;
+        padding: 20px 0 0 0px;
     }
 
-    /* .img .img img {
-        width: 100%;
-    } */
     .img.img img {
         width: 100%;
     }
+
+    /* .img img{width: 100% !important;} */
 
     section .inner {
         width: 100%;
@@ -573,11 +575,11 @@ section.team .circleBox {
     }
 
     section.jurnal .circleBox {
-        position: absolute;
         right: -10%;
+        top: 0;
     }
 
-    section.jurnal .box .img {
+    section.jurnal .box img {
         width: 90%;
     }
 
@@ -601,9 +603,8 @@ section.team .circleBox {
     .menuOpen {
         position: absolute;
         top: 0;
-        right: 0;
         transform: none;
-        padding: 15px 20px;
+        padding: 10px 20px;
     }
 
     .menuOpen .open::before {
@@ -616,8 +617,8 @@ section.team .circleBox {
     }
 
     .visual .mainTxt {
-        width: 100%;
         float: none;
+        width: 100%;
         margin-top: 50px;
     }
 
@@ -676,6 +677,7 @@ section.team .circleBox {
 
     section.team {
         padding: 80px 0;
+        overflow: hidden;
     }
 
     section.team .circleBox {
@@ -692,11 +694,10 @@ section.team .circleBox {
         clear: both;
     }
 
-    section.team .box:nth-child(2) .img {
+    section.team .box:last-child .img {
         width: 100%;
         margin: 50px 0;
     }
-
 
     section.team .box.left .moreBtn {
         float: right;
@@ -721,10 +722,6 @@ section.team .circleBox {
     .innerheader {
         height: 60px;
         line-height: 60px;
-    }
-
-    .menuOpen {
-        top: -5px;
     }
 
     .menuOpen .open img {
@@ -808,7 +805,38 @@ section.team .circleBox {
         font-size: 25px;
     }
 
+    section.team {
+        padding: 50px 0;
+    }
 
+    section.team .circleBox {
+        left: 4%;
+    }
+
+    section.team .box .txt {
+        margin: 30px 0 10px;
+    }
+
+    section.team .box .img {
+        margin-top: 50px;
+    }
+
+    section.team .box:last-child .img {
+        margin-top: 30px;
+    }
+
+    footer .top .tit {
+        margin-bottom: 30px;
+    }
+
+    footer .bottom ul li:first-child {
+        font-size: 20px;
+    }
+
+    footer .bottom ul li {
+        width: 100%;
+        margin-bottom: 12px;
+    }
 }
 
 @media (max-width:320px) {
@@ -822,5 +850,13 @@ section.team .circleBox {
 
     section.jurnal .box ul li h3 {
         font-size: 14px;
+    }
+
+    section.team .box.left {
+        padding-right: 0;
+    }
+
+    .moreBtn {
+        font-size: 11px;
     }
 }
