@@ -256,6 +256,30 @@ section.customer .txt {
     color: #777;
 }
 
+/* team */
+section.team {
+    position: relative;
+    padding: 190px 0;
+}
+
+section.team .box.right {
+    text-align: right;
+    padding-right: 80px;
+    box-sizing: border-box;
+}
+
+section.team .box .tit {
+    margin-top: 40px;
+}
+
+section.team .box .txt {
+    margin: 30px 0;
+}
+
+section.team .box .img {
+    margin-top: 100px;
+}
+
 /* inner - 넓이에 대한 가이드 */
 section .inner {
     width: 1320px;
@@ -420,6 +444,14 @@ section.jurnal .circleBox {
     width: 700px;
     right: 13%;
     top: 100px;
+    z-index: -1;
+}
+
+section.team .circleBox {
+    position: absolute;
+    width: 700px;
+    left: 20%;
+    top: -50px;
     z-index: -1;
 }
 
@@ -674,16 +706,16 @@ section.jurnal .circleBox {
         width: 100%;
     }
 
-    section.service .box.design .tit{
+    section.service .box.design .tit {
         font-size: 25px;
         margin-bottom: 10px;
     }
 
-    section.customer{
+    section.customer {
         padding: 80px 20px;
     }
 
-    section.customer .tit.tit{
+    section.customer .tit.tit {
         font-size: 25px;
     }
 }
