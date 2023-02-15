@@ -5,10 +5,10 @@
   padding: 0;
 }
 
-
 .wrap {
   width: 900px;
   margin: 0 auto;
+  padding: 10% 0;
 }
 
 .wrap>div {
@@ -79,4 +79,102 @@ li {
 .table2 td {
   border: 1px solid black;
   border-collapse: collapse;
+  background-color: aqua;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+
+.table2 tr:nth-child(2) {
+  height: 100px;
+}
+
+.table2 th:nth-child(1) {
+  width: 20%;
+}
+
+.table2 th:nth-child(2) {
+  width: 60%;
+}
+
+.table2 th:nth-child(3) {
+  width: 20%;
+}
+
+.table3 table {
+  width: 100%;
+}
+
+.table3 table,
+.table3 th,
+.table3 td {
+  border: 1px solid blue;
+  border-collapse: collapse;
+}
+
+.table4 table {
+  width: 100%;
+}
+
+.table4 table,
+.table4 th,
+.table4 td {
+  border: 1px solid green;
+  border-collapse: collapse;
+}
+
+.table5 table {
+  width: 100%;
+}
+
+.table5 table,
+.table5 th,
+.table5 td {
+  border: 1px solid violet;
+  border-collapse: collapse;
+}
+
+.table6 table {
+  width: 100%;
+}
+
+.table6 table,
+.table6 th,
+.table6 td {
+  border: 1px solid magenta;
+  border-collapse: collapse;
+}
+
+.table7 table {
+  width: 100%;
+}
+
+.table7 table,
+.table7 th,
+.table7 td {
+  border: 1px solid orangered;
+  border-collapse: collapse;
+}
+
+.table8 table {
+  width: 100%;
+}
+
+.table8 table,
+.table8 th,
+.table8 td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+/* .table8 tr:nth-child(even) { */
+.table8 tr:nth-child(2n) {
+  /* even: 짝수 */
+  background-color: rgba(150, 212, 212, 0.4);
+}
+
+/* .table8 tr:nth-child(odd) { */
+.table8 tr:nth-child(2n+1) {
+  /* odd: 홀수 */
+  background-color: rgba(230, 194, 212, 0.699);
 }
