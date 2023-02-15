@@ -178,3 +178,50 @@ li {
   /* odd: 홀수 */
   background-color: rgba(230, 194, 212, 0.699);
 }
+
+.table8 td:nth-child(even),
+.table8 th:nth-child(even) {
+  background-color: rgba(150, 212, 212, 0.4);
+}
+
+.table9 table {
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+}
+
+.table9 table td,
+.table9 table th {
+  padding: 15px;
+}
+
+.table9 table tr {
+  border-bottom: 1px solid black;
+}
+
+.table9 table tr:hover {
+  background-color: rgba(150, 212, 212, 0.4);
+}
+
+.table10 table {
+  width: 100%;
+}
+
+.table10 table,
+.table10 th,
+.table10 td {
+  border: 1px solid orangered;
+  border-collapse: collapse;
+}
+
+.table10 colgroup col:nth-child(1) {
+  background-color: skyblue;
+}
+
+.table10 colgroup col:nth-child(2) {
+  background-color: pink;
+}
+
+.table10 colgroup col:nth-child(3) {
+  background-color: blue;
+}
