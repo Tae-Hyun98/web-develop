@@ -159,7 +159,7 @@ header .container .search a i {}
 
 }
 
-.right_area .middle_txt ul li:last-child {
+.main .slick-active .right_area .middle_txt ul li:last-child {
     animation-delay: 1.2s;
 }
 
