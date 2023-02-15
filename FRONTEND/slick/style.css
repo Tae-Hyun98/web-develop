@@ -145,6 +145,7 @@ header .container .search a i {}
 
 .right_area .middle_txt ul {
     padding-left: 5%;
+    padding-bottom: 10px;
 }
 
 .main .slick-active .middle_txt ul li {
