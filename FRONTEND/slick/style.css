@@ -100,6 +100,7 @@ header .container .search a i {}
 .left_area .vespa_img {
     width: 120%;
     padding-top: 160px;
+    opacity: 0;
 }
 
 .main .slick-active .left_area .vespa_img {
@@ -146,11 +147,15 @@ header .container .search a i {}
     padding-left: 5%;
 }
 
+.main .slick-active .middle_txt ul li {
+    animation: fadeInL 0.5s 1s both;
+}
+
 .right_area .middle_txt ul li {
     position: relative;
     font-size: 20px;
     padding-left: 12px;
-    animation: fadeInL 0.5s 1s both;
+
 }
 
 .right_area .middle_txt ul li:last-child {
@@ -199,39 +204,37 @@ header .container .search a i {}
     line-height: 42px;
 }
 
-.main .slick-prev {
+.main .slick-arrow {
     position: absolute;
-    left: 0;
+    left: -2%;
     top: 50%;
     transform: translateY(-50%);
     z-index: 10;
-    visibility: hidden;
     font-size: 0;
+    visibility: hidden;
 }
 
 .main .slick-prev::after {
-    content: "";
+    content: "\f053";
     font-family: "Font Awesome 5 Free";
+    font-weight: 900;
     visibility: visible;
-    font-size: 30px;
-    z-index: 10;
-}
-
-.main .slick-next {
-    position: absolute;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    visibility: hidden;
+    font-size: 50px;
     color: #fff;
 }
 
+.main .slick-next {
+    left: auto;
+    right: -2%;
+}
+
 .main .slick-next::after {
-    content: "";
+    content: "\f054";
     font-family: "Font Awesome 5 Free";
+    font-weight: 900;
     visibility: visible;
-    font-size: 30px;
-    z-index: 10;
+    font-size: 50px;
+    color: #fff;
 }
 
 @keyframes fadeInR {
