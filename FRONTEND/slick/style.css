@@ -94,7 +94,6 @@ header .container .search a i {}
 .right_area {
     width: 50%;
     height: 80vh;
-    background-color: blue;
 }
 
 
@@ -129,17 +128,110 @@ header .container .search a i {}
     letter-spacing: 19px;
 }
 
-.main .slick-arrow {
+.main .slick-active .vespa_tit {
+    animation: fadeInT 0.5s 0.9s both;
+}
+
+
+.right_area {
+    color: #fff;
+    padding-top: 25%;
+    padding-left: 10%;
+    box-sizing: border-box;
+}
+
+.right_area .middle_txt {}
+
+.right_area .middle_txt ul {
+    padding-left: 5%;
+}
+
+.right_area .middle_txt ul li {
+    position: relative;
+    font-size: 20px;
+    padding-left: 12px;
+    animation: fadeInL 0.5s 1s both;
+}
+
+.right_area .middle_txt ul li:last-child {
+    animation-delay: 1.2s;
+}
+
+.right_area .middle_txt ul li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 11px;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.right_area .bottom_area {
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    margin-top: 2%;
+}
+
+.right_area .bottom_area .custom_btn {
+    border: 2px solid #fff;
+    box-sizing: border-box;
+}
+
+.right_area .bottom_area .custom_btn a {
+    display: block;
+    padding: 10px 25px;
+}
+
+.right_area .bottom_area .down_btn {
+    background-color: #38a385;
+}
+
+.right_area .bottom_area .down_btn a {
+    display: block;
+    padding: 10px 20px;
+}
+
+.right_area .bottom_area .price span {
+    font-size: 24px;
+    line-height: 42px;
+}
+
+.main .slick-prev {
     position: absolute;
     left: 0;
     top: 50%;
     transform: translateY(-50%);
+    z-index: 10;
+    visibility: hidden;
+    font-size: 0;
+}
+
+.main .slick-prev::after {
+    content: "";
+    font-family: "Font Awesome 5 Free";
+    visibility: visible;
+    font-size: 30px;
+    z-index: 10;
+}
+
+.main .slick-next {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    visibility: hidden;
+    color: #fff;
 }
 
 .main .slick-next::after {
-    content: "\f054";
+    content: "";
     font-family: "Font Awesome 5 Free";
-
+    visibility: visible;
+    font-size: 30px;
+    z-index: 10;
 }
 
 @keyframes fadeInR {
