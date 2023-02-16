@@ -81,7 +81,9 @@ header .search a i {
 
 .left_area {
   width: 50%;
-  height: 75vh;
+  height: 80vh;
+  padding-left: 30px;
+  box-sizing: border-box;
 }
 
 .left_area .title {
@@ -89,13 +91,18 @@ header .search a i {
   left: 0;
   top: 170px;
   z-index: -1;
+  padding-left: 50px;
+  font-weight: bold;
 }
 
 .left_area .title h2 {
-  font-weight: bold;
-  font-size: 180px;
-  letter-spacing: 10px;
+  font-size: 150px;
+  letter-spacing: 20px;
   line-height: 100%;
+}
+
+.main .slick-active .left_area .title {
+  animation: fadeInL 0.5s 0.5s both;
 }
 
 .left_area .title p {
@@ -108,13 +115,218 @@ header .search a i {
 .left_area .img {
   width: 120%;
   padding-top: 200px;
+  opacity: 0;
 }
 
 .left_area .img img {
-  width: 110%;
+  width: 100%;
+}
+
+.main .slick-active .left_area .img {
+  animation: fadeInR 0.5s 1s both;
 }
 
 .right_area {
   width: 50%;
-  height: 75vh;
+  height: 80vh;
+  color: #fff;
+  padding-top: 17%;
+  padding-left: 15%;
+  box-sizing: border-box;
+}
+
+.right_area .txt {
+  position: relative;
+}
+
+.main .slick-active .right_area .txt {
+  animation: fadeInL 0.5s 0.8s both;
+}
+
+.right_area .star ul li.nike {
+  font-size: 70px;
+  font-style: italic;
+}
+
+.right_area .txt .star ul {
+  display: flex;
+  align-items: baseline;
+}
+
+.right_area .txt .star ul li:nth-child(2) {
+  padding-left: 15px;
+  color: gold;
+  letter-spacing: 5px;
+  font-size: 20px;
+}
+
+.right_area .txt .star ul li i:last-child {
+  color: #fff;
+}
+
+.right_area .txt p {
+  font-weight: normal;
+}
+
+.right_area .txt p b {
+  font-size: 20px;
+  padding-bottom: 5px;
+}
+
+
+.right_area .middle_area {
+  font-size: 14px;
+  font-weight: lighter;
+}
+
+.right_area .middle_area ul li {
+  position: relative;
+}
+
+.right_area .middle_area ul li i {
+  color: gold;
+  padding-right: 2px;
+}
+
+.right_area .middle_area1 {
+  font-size: 14px;
+  font-weight: lighter;
+}
+
+.right_area .middle_area ul li::before {
+  content: "";
+  position: absolute;
+  left: -15px;
+  top: 7px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.right_area .ani {
+  padding-bottom: 23px;
+}
+
+.main .slick-active .right_area .ani {
+  animation: fadeInR 0.5s 1s both;
+}
+
+.right_area .bottom_area {
+  display: flex;
+  width: 60%;
+  justify-content: space-between;
+  margin-top: 2%;
+}
+
+.right_area .bottom_area .size_btn {}
+
+.right_area .bottom_area .size_btn a {
+  padding: 5px 5px;
+  background-color: gold;
+  color: #000;
+  font-weight: bold;
+}
+
+.right_area .bottom_area .add_btn {}
+
+.right_area .bottom_area .add_btn a {
+  padding: 10px 20px;
+  border: 2px solid #fff;
+}
+
+.right_area .bottom_area .price {}
+
+.right_area .bottom_area .price span {
+  padding: 10px 10px;
+  font-size: 25px;
+  font-weight: bolder;
+  line-height: 1;
+}
+
+.main .slick-active .bottom_area .size_btn {
+  animation: fadeInL 0.5s 1s both;
+}
+
+.main .slick-active .bottom_area .add_btn {
+  animation: fadeInD 0.5s 1s both;
+}
+
+.main .slick-active .bottom_area .price {
+  animation: fadeInR 0.5s 1s both;
+}
+
+/* slick button */
+.main .slick-arrow {
+  position: absolute;
+  left: -3%;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  font-size: 0;
+  visibility: hidden;
+}
+
+.main .slick-prev::after {
+  content: "\f053";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 30px;
+  color: #fff;
+  visibility: visible;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 25px 15px;
+}
+
+.main .slick-next {
+  left: auto;
+  right: -3%;
+}
+
+.main .slick-next::after {
+  content: "\f054";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 30px;
+  color: #fff;
+  visibility: visible;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 25px 15px;
+}
+
+
+@keyframes fadeInL {
+  0% {
+    transform: translateX(-150%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInR {
+  0% {
+    transform: translateX(150%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInD {
+  0% {
+    transform: translateY(150%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
 }
