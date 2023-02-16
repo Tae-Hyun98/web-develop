@@ -126,6 +126,8 @@ header .search a i {
   animation: fadeInR 0.5s 1s both;
 }
 
+/* right_area */
+
 .right_area {
   width: 50%;
   height: 80vh;
