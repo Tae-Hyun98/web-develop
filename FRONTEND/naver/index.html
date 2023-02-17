@@ -119,8 +119,24 @@
                 <h3 class="join_title">
                     <label for="phoneNo">휴대전화</label>
                 </h3>
-                <span class="box int_mobile">
-                    <input type="text" id="phoneNo" class="int" maxlength="16" placeholder="전화번호 입력">
+                <span class=" box korea">
+                    <select id="number">
+                        <option>대한민국 +82</option>
+                        <option value="J">일본 +81</option>
+                        <option value="U">미국/캐나다 +1</option>
+                        <option value="G">그리스 +30</option>
+                    </select>
+                </span>
+                <div class="mobile_area">
+                    <span class="box int_mobile">
+                        <input type="text" id="phoneNo" class="int" maxlength="16" placeholder="전화번호 입력">
+                    </span>
+                    <a href="#" class="btn">
+                        <span>인증번호 받기</span>
+                    </a>
+                </div>
+                <span class="box int_ig">
+                    <input type="text" class="int" placeholder="인증번호 입력하세요">
                 </span>
             </div> <!-- END phone -->
 
